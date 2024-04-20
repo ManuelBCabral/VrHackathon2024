@@ -1,0 +1,44 @@
+EnvBiriKyu
+==========
+  Textures:
+    - BiriKyu
+    - Rif
+        Offset: -0.9912109375, 0.0390625
+        Scale: 1.07421875, 1.07421875
+
+  Ambient Colors:
+    - 50, 50, 50, 50
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Color Registers:
+    - 32, 32, 32, 255
+    - 0, 8, 16, 255
+    - 145, 145, 145, 255
+
+  Steps:
+    1: RGB = (lerp from (0, 8, 16) to (32, 32, 32) using (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+    2: RGB = ((prev. RGB) * (tex #1 RGB)), multiply by 2
+         A = (vertex A)
+    3: RGB = ((tex #2 RGB) * (145, 145, 145)), then add (prev. RGB)
+         A = (vertex A)
+
+
+
+Eye
+===
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 50
+
+  Material Colors:
+    - 204, 0, 0, 255
+    - 204, 0, 0, 255
+
+  Steps:
+    1: RGB = (vertex RGB)
+         A = (vertex A)

@@ -1,0 +1,21 @@
+CocoNutMat_v
+============
+  Textures:
+    - Body02
+
+  Ambient Colors:
+    - 128, 128, 128, 128
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Color Registers:
+    - 93, 93, 93, -94
+    - 10, 10, 20, 255
+
+  Steps:
+    1: RGB = (lerp from (10, 10, 20) to (93, 93, 93) using (vertex RGB)), multiply by 2
+         A = (lerp from (tex #1 A) to 32 using (vertex A)), then add -94
+    2: RGB = ((prev. RGB) * (tex #1 RGB)), then add (prev. A), multiply by 2
+         A = (64 * (vertex A)), then add -94, multiply by 2

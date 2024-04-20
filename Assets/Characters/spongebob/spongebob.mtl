@@ -1,0 +1,8 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v4.1.0)
+
+newmtl mat_chr_sb05
+Kd 1 1 1
+illum 1
+map_Kd chr_sb05.png
+
