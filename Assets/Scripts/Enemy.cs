@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
         if(pointIndex >= WayPoints.waypoints.Length-1)
         {
             Destroy(gameObject);
+            return;
         }
         pointIndex++;
         target = WayPoints.waypoints[pointIndex];
