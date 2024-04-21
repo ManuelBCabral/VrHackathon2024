@@ -27,7 +27,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        waveCountdownText.text = Mathf.Floor(countdown).ToString();
+        waveCountdownText.text = "Next Round In: " + Mathf.Floor(countdown).ToString();
     }
 
     IEnumerator SpawnWave()
@@ -37,7 +37,7 @@ public class WaveSpawner : MonoBehaviour
             SpawnEnemy();
             yield return new WaitForSeconds(0.5f);
         }
-        waveNumber+= 2;
+        waveNumber += 2;
     }
 
     void SpawnEnemy()

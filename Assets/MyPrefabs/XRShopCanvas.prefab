@@ -133,9 +133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sponge: {fileID: 4948542790323652983, guid: 5a9c62135f167ab42b92b5a9f807c527, type: 3}
   Cannon: {fileID: 6085395403584788640, guid: eeee9ea91d8697c4fa45ab12a98370a9, type: 3}
-  Sniper: {fileID: 0}
+  Sniper: {fileID: 6638292730124916470, guid: 298a77fe0cd75db428d75a35b54e4855, type: 3}
   Kick: {fileID: 3988372687063052348, guid: d7db6ea32aae48b4697e5b5127f07334, type: 3}
-  Mage: {fileID: 0}
+  Mage: {fileID: 8111601463318134289, guid: 9508cfdf10a04834d9e8c8973b73ca96, type: 3}
   Tree: {fileID: 6898776678539865713, guid: aa6ef8b09ac590046a8a14e4de71ce5a, type: 3}
 --- !u!1 &766615757462451387
 GameObject:
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1404719624762566890
 MonoBehaviour:
   m_ObjectHideFlags: 0

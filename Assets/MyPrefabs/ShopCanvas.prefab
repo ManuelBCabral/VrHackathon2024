@@ -901,6 +901,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c281b45b526114f877c1ebc5843f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sponge: {fileID: 0}
+  Cannon: {fileID: 0}
+  Sniper: {fileID: 0}
+  Kick: {fileID: 0}
+  Mage: {fileID: 0}
+  Tree: {fileID: 0}
 --- !u!1 &6464695242055963677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,7 +2087,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8811861696689577549
 MonoBehaviour:
   m_ObjectHideFlags: 0
