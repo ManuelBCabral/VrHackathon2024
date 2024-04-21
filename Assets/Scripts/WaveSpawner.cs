@@ -8,12 +8,12 @@ public class WaveSpawner : MonoBehaviour
 
     public Transform spawnPoint;
 
-    public float timeBetweenWaves = 15f;
-    private float countdown = 5f;
+    public float timeBetweenWaves = 2f;
+    private float countdown = 15f;
 
     public Text waveCountdownText;
 
-    private int waveNumber = 2;
+    private int waveNumber = 1;
 
     public Text healthtxt;
     public int health;
@@ -30,7 +30,14 @@ public class WaveSpawner : MonoBehaviour
         {
             StartCoroutine(SpawnWave());
             SpawnWave();
-            countdown = timeBetweenWaves;
+            if (waveNumber >= 5)
+            {
+                countdown = timeBetweenWaves + waveNumber;
+            }
+            else
+            {
+                countdown = timeBetweenWaves * waveNumber;
+            }
 
         }
 
@@ -44,7 +51,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.8f);
         }
         waveNumber += 2;
     }
