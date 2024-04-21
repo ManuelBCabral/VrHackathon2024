@@ -15,6 +15,15 @@ public class WaveSpawner : MonoBehaviour
 
     private int waveNumber = 2;
 
+    public Text healthtxt;
+    public int health;
+
+
+    private void Start()
+    {
+        health = 100;
+        healthtxt.text = "Health: " + health;
+    }
     void Update ()
     {
         if (countdown <= 0f)
@@ -43,5 +52,11 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+    }
+
+    public void LoseHealth()
+    {
+        health -= 5;
+        healthtxt.text = "Health: " + health;
     }
 }

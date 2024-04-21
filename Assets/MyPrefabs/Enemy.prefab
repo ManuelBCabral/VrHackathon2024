@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 5194903993843557785}
   - component: {fileID: 5733848504686351580}
   - component: {fileID: 5733848504686351587}
+  - component: {fileID: 4682529094251001640}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -264,7 +265,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7263121565562632064, guid: e9ac6e75087486c408d6e411a9055c7a, type: 3}
 --- !u!114 &5733848504686351587
@@ -280,6 +281,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!135 &4682529094251001640
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4851451038751653667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.37, z: 0}
 --- !u!1 &5033289533015079599
 GameObject:
   m_ObjectHideFlags: 0
