@@ -3,6 +3,15 @@ Title: VR Hackathon Tower Defense Game
 Description: This is a tower defense game that is implemented in virtual reality, In the game the user has to defend against waves of enemies by building towers to fight against the enemies. Building towers is made more creative with the interactive shop in the game that shows the players gold and health.
 
 How to install and run the project: You need to have an Quest 2 virtual reality headset, and Unity installed to run the project. 
+Downloading the project:
+Clone or download this repository to a workspace on your drive
+Click the ⤓ Code button on this page to get the URL to clone with Git or click Download ZIP to get a copy of this repository that you can extract
+Open a project in Unity
+Download, install, and run Unity Hub
+In the Installs tab, select Locate or Add to find or install Unity 2021.3.29f1. 
+In the Projects tab, click Add
+Browse to folder where you downloaded a copy of this repository and click Select Folder
+
  
 How to play: At the start of the game you can move around using the right joystick. If you look at your left hand you can see the shop menu. To buy something from the shop you need to use your right hand ray and point it at what you want in the shop. From here the object will spawn close to your face. You can then grab the unit with your right hand and place it down on any of the squares of the map. The enemies are spawned in waves and each wavelength gets longer so more enemies can spawn. Survive and have fun!
 
